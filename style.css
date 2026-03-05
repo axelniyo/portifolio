@@ -547,7 +547,6 @@ section {
     gap: 12px;
 }
 
-.skill-item {}
 
 .skill-header {
     display: flex;
@@ -1165,7 +1164,24 @@ footer a:hover {
     }
 
     .timeline-item {
-        grid-template-columns: 80px 1px 1fr;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        padding-bottom: 32px;
+    }
+
+    /* hide the vertical line & dot on mobile */
+    .tl-line {
+        display: none;
+    }
+
+    /* date becomes a small label above the role */
+    .tl-date {
+        text-align: left;
+        font-size: 11px;
+        color: var(--accent);
+        font-weight: 700;
+        letter-spacing: 0.5px;
     }
 
     .nav-links {
