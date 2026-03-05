@@ -1,3 +1,6 @@
+/* ===== AUTO YEAR ===== */
+document.getElementById('footer-year').textContent = new Date().getFullYear();
+
 /* ===== ANIMATED BACKGROUND CANVAS ===== */
 (function () {
   const canvas = document.getElementById('bg-canvas');
