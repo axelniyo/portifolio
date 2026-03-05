@@ -1,308 +1,544 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Niyonsaba Axel - Software Developer</title>
+  <title>Axel Niyonsaba - Software Developer</title>
+  <meta name="description"
+    content="Portfolio of Axel Niyonsaba — Full-Stack Developer, Backend Engineer, and AI App Builder based in Kigali, Rwanda. Open to remote and hybrid roles." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --bg:#0b0f14;
-      --card:#0f1720;
-      --muted:#9aa6b2;
-      --accent:#00d1ff;
-      --accent-2:#8b5cf6;
-      --glass: rgba(255,255,255,0.03);
-      --glass-2: rgba(255,255,255,0.02);
-      --radius:14px;
-      --mono: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-    }
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0;
-      font-family:var(--mono);
-      background: radial-gradient(1200px 400px at 10% 10%, rgba(11,15,20,0.6), transparent),
-                  radial-gradient(800px 300px at 90% 80%, rgba(20,12,40,0.5), transparent),
-                  var(--bg);
-      color:#e6eef6;
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      line-height:1.5;
-      padding:32px;
-    }
-    .container{max-width:1100px;margin:0 auto}
-
-    header{
-      display:flex;align-items:center;justify-content:space-between;margin-bottom:28px;
-    }
-    .brand{display:flex;gap:16px;align-items:center}
-    .logo{
-      width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-2));
-      display:flex;align-items:center;justify-content:center;font-weight:800;color:#071226;font-size:20px;box-shadow:0 6px 18px rgba(139,92,246,0.12);
-    }
-    .brand h1{margin:0;font-size:18px}
-    .brand p{margin:0;color:var(--muted);font-size:13px}
-
-    nav{display:flex;gap:12px;align-items:center}
-    .btn{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:8px 12px;border-radius:10px;color:var(--muted);font-weight:600;cursor:pointer}
-    .btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent-2));border:none;color:#071226}
-
-    main{display:grid;grid-template-columns:1fr 360px;gap:28px}
-
-    /* Hero */
-    .hero{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);padding:28px;border-radius:var(--radius);box-shadow:0 6px 20px rgba(2,6,23,0.6);border:1px solid var(--glass)}
-    .intro{display:flex;gap:20px}
-    .avatar{width:116px;height:116px;border-radius:16px;background:linear-gradient(160deg,var(--accent-2),var(--accent));display:flex;align-items:center;justify-content:center;font-size:36px;font-weight:700;color:#071226}
-    .intro h2{margin:0 0 8px 0}
-    .intro p{margin:0;color:var(--muted)}
-    .hero .tags{margin-top:16px;display:flex;flex-wrap:wrap;gap:8px}
-    .chip{background:var(--glass);padding:8px 10px;border-radius:999px;font-size:13px;color:var(--muted);border:1px solid rgba(255,255,255,0.02)}
-
-    /* Cards */
-    .card{background:var(--card);padding:18px;border-radius:12px;border:1px solid var(--glass-2)}
-    .section{margin-bottom:18px}
-    .section h3{margin:0 0 12px 0;font-size:16px}
-
-    /* Skills */
-    .skills{display:flex;flex-wrap:wrap;gap:10px}
-    .skill{padding:10px 12px;border-radius:10px;background:linear-gradient(180deg,rgba(255,255,255,0.012),transparent);border:1px solid rgba(255,255,255,0.02);font-weight:600}
-
-    /* Projects */
-    .projects{display:grid;grid-template-columns:1fr;gap:12px}
-    .project{display:flex;flex-direction:column;gap:10px;padding:14px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);border:1px solid rgba(255,255,255,0.03)}
-    .project .meta{display:flex;justify-content:space-between;align-items:center}
-    .project .meta span{color:var(--muted);font-size:13px}
-    .project p{margin:0;color:var(--muted)}
-    .project .links{display:flex;gap:8px}
-    .link-btn{padding:8px 10px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--muted);font-weight:700;text-decoration:none}
-    .link-btn.visit{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#071226;border:none}
-
-    /* Right column */
-    aside.right{position:sticky;top:28px}
-    .contact-list{display:flex;flex-direction:column;gap:10px}
-    .contact-item{display:flex;gap:12px;align-items:center}
-    .contact-item svg{opacity:0.9}
-
-    footer{margin-top:28px;color:var(--muted);font-size:13px;text-align:center}
-
-    /* Responsive */
-    @media (max-width:980px){main{grid-template-columns:1fr} aside.right{position:static} .container{padding:0 18px}}
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div class="container">
-    <header>
-      <div class="brand">
-        <div class="logo">NA</div>
+
+  <!-- Animated background -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- ===== NAV ===== -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <a class="nav-brand" href="#hero">
+      <div class="nav-logo">NA</div>
+      <span class="nav-name">Niyonsaba Axel</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="nav-cta" href="mailto:axelniyo@outlook.com">Hire Me →</a>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="container">
+      <div class="hero-grid">
         <div>
-          <h1>Niyonsaba Axel</h1>
-          <p>Software Developer</p>
-        </div>
-      </div>
-      <nav>
-        <a class="btn" href="#projects">Projects</a>
-        <a class="btn" href="#contact">Contact</a>
-        <a class="btn primary" href="#resume">Download CV</a>
-      </nav>
-    </header>
+          <div class="hero-badge">
+            <span class="dot"></span>
+            Open to opportunities
+          </div>
+          <h1>
+            Building software<br>
+            that <span class="name">matters.</span>
+          </h1>
 
-    <main>
-      <section>
-        <div class="hero card">
-          <div class="intro">
-            <div class="avatar">AX</div>
-            <div>
-              <h2>Hi - I’m <strong>Niyonsaba Axel</strong></h2>
-              <p>I design and secure networks, build web apps, and create reliable systems for users and businesses. Currently building projects that combine networking, cybersecurity and web development.</p>
-
-              <div class="tags">
-                <div class="chip">Kigali, Rwanda</div>
-                <div class="chip">B.Sc. Computer Science & IT</div>
-                <div class="chip">Open to opportunities</div>
-                <div class="chip">Available for remote/hybrid</div>
+          <!-- Mobile-only avatar (shown between h1 and description) -->
+          <div class="hero-avatar-mobile">
+            <div class="hero-avatar">
+              <img src="download (1).png" alt="Axel Niyonsaba" class="avatar-photo" />
+              <div class="avatar-name">Axel Niyonsaba</div>
+              <div class="avatar-role">Software Developer</div>
+              <div class="avatar-location">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                </svg>
+                Kigali, Rwanda
               </div>
+              <div class="avatar-glow"></div>
             </div>
           </div>
 
-          <div style="margin-top:18px;display:flex;gap:12px;align-items:center">
-            <a class="btn primary" href="#projects">View Projects</a>
-            <a class="btn" href="#contact">Get in touch</a>
+          <p class="hero-desc">I'm <strong>Axel Niyonsaba</strong> a software developer designing full-stack web apps,
+            AI-powered solutions, and secure networked systems.</p>
+          <div class="typed-wrap">
+            <span class="typed-text"></span><span class="typed-cursor">|</span>
+          </div>
+          <div class="hero-chips">
+            <span class="chip">📍 Kigali, Rwanda</span>
+            <span class="chip">🎓 B.Sc. Computer Science &amp; IT</span>
+            <span class="chip">🌐 Remote / Hybrid Ready</span>
+          </div>
+          <div class="hero-btns">
+            <a class="btn-primary" href="#projects">View My Work</a>
+            <a class="btn-ghost" href="#contact">Get in Touch</a>
           </div>
         </div>
 
-        <div class="card section" style="margin-top:18px">
-          <h3>About me</h3>
-          <p style="color:var(--muted)">Software Developer with a strong foundation in full-stack, backend, 
-            and systems-level development. Experienced in building web applications, AI-powered solutions, 
-            and scalable software using JavaScript, Node.js, Python, and SQL. Skilled in cloud deployment, networking, and real-time systems, 
-            with a passion for creating maintainable, interactive, and high-performance applications. Currently pursuing dual degrees in Computer Science and IT.</p>
+        <div class="hero-avatar-wrap">
+          <div class="float-badge" style="color:var(--accent);"><span>⚡</span> Node.js &amp; React</div>
+          <div class="float-badge" style="color:var(--accent-2);"><span>🤖</span> RAG &amp; AI</div>
+          <div class="float-badge" style="color:var(--accent-3);"><span>☁️</span> AWS &amp; Azure</div>
+          <div class="hero-avatar">
+            <img src="download (1).png" alt="Niyonsaba Axel" class="avatar-photo" />
+            <div class="avatar-name">Axel Niyonsaba</div>
+            <div class="avatar-role">Software Developer</div>
+            <div class="avatar-location">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path
+                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+              </svg>
+              Kigali, Rwanda
+            </div>
+            <div class="avatar-glow"></div>
+          </div>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <div class="card section">
-          <h3>Skills</h3>
-          <div class="skills">
-           
-            <div class="skill">JavaScript / Node.js, React.js</div>
-            <div class="skill"> SQL & MongoDB</div>
-            <div class="skill">Java</div>
-            <div class="skill">DevOps Basics</div>
-            <div class="skill">WebSockets / Real-time</div>
-             <div class="skill">AWS(EC2, S3, Cloudfront, RDS)</div>
-            <div class="skill">Microsoft Azure, Microsoft Dynamics CRM, </div>
-            <div class="skill">Network Security</div>
-            <div class="skill">Wireshark & Monitoring</div>
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="container">
+      <p class="section-label">Who I Am</p>
+      <h2 class="section-title">Turning ideas into<br>working software.</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>I'm a Software Developer with a strong foundation in <strong>full-stack</strong>, <strong>backend</strong>,
+            and <strong>systems-level</strong> development. I build web applications, AI-powered solutions, and scalable
+            software using JavaScript, Node.js, Python, and SQL.</p>
+          <p>Skilled in cloud deployment across <strong>AWS</strong> and <strong>Azure</strong>, real-time systems via
+            WebSockets, and networking fundamentals — I care about building things that are <em>fast, maintainable, and
+              genuinely useful</em>.</p>
+          <p>Currently pursuing a dual degree in Computer Science (University of the People) and IT (UNILAK, Kigali),
+            while actively working as a part-time Software Developer at VT Labs.</p>
+          <div class="stat-row">
+            <div class="stat-card reveal reveal-delay-1">
+              <div class="stat-num">4+</div>
+              <div class="stat-lbl">Projects Shipped</div>
+            </div>
+            <div class="stat-card reveal reveal-delay-2">
+              <div class="stat-num">3</div>
+              <div class="stat-lbl">Certifications</div>
+            </div>
+            <div class="stat-card reveal reveal-delay-3">
+              <div class="stat-num">2</div>
+              <div class="stat-lbl">Tech Roles Held</div>
+            </div>
           </div>
         </div>
 
-        <div id="projects" class="card section">
-          <h3>Projects</h3>
-          <div class="projects">
-            <!-- ScentScript -->
-<article class="project">
-  <div class="meta">
-    <strong>ScentScript (AI Fragrance Matchmaker)</strong>
-    <span>Target: L'Oréal Brandstorm 2026 • Tech Track</span>
-  </div>
-  <p>
-    ScentScript is a privacy-first AI recommendation engine tackling the challenge of "blind buys" in luxury fragrances. Users input scent preferences and chemical sensitivities in the React frontend. 
-    The Node.js backend cross-references profiles against L'Oréal’s private databases using a RAG architecture and AI API, filtering unsafe formulas without exposing trade secrets. 
-    The system generates bespoke fragrance recommendations like "It's Your Type!"—a zero-manufacturing software solution enhancing online consumer confidence and brand engagement.
-  </p>
-  <div class="links">
-    <!-- Optional: Add a live demo or GitHub link if available -->
-    <!--<a class="link-btn" href="#" target="_blank" rel="noopener">Visit site</a>-->
-  </div>
-</article>
-
-            <!-- Embedded Finance Research Assistant -->
-<article class="project">
-  <div class="meta">
-    <strong>Embedded Finance Research Assistant</strong>
-    <span>AI-powered RAG Chatbot • Gemini AI • Pinecone • n8n</span>
-  </div>
-  <p>
-    An AI research assistant trained on industry reports from Bain & Company, Deloitte, Visa, Munich Re, and PayPal Ventures. 
-    Built with a Retrieval-Augmented Generation (RAG) architecture: documents are chunked, embedded using Google Gemini, and stored in a Pinecone vector database. 
-    User queries are matched against the knowledge base to deliver accurate, source-grounded answers.
-  </p>
-  <div class="links">
-    <a class="link-btn visit" href="https://ai-agent-zeta-six.vercel.app/" target="_blank" rel="noopener">Visit site</a>
-  </div>
-</article>
-            <!-- Language Learning -->
-
-            <article class="project">
-              <div class="meta">
-                <strong>Language Learning</strong>
-                <span>Interactive learning platform • Multi-language</span>
+        <div class="reveal reveal-delay-1">
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-header"><span>JavaScript / Node.js</span><span class="skill-pct">90%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" style="width:90%"></div>
               </div>
-              <p>Language Learning is an online platform that helps learners move from beginner to advanced language skills. It includes lessons, progress tracking, and interactive exercises. Live demo is available.</p>
-              <div class="links">
-                <a class="link-btn" href="https://languagelearningcustfro.onrender.com/" target="_blank" rel="noopener">Visit site</a>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header"><span>React.js</span><span class="skill-pct">82%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" style="width:82%"></div>
               </div>
-            </article>
-            <!-- ChatConnect -->
-            <article class="project">
-              <div class="meta">
-                <strong>ChatConnect</strong>
-                <span>Real-time chat app • Authentication • WebSockets</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header"><span>Python</span><span class="skill-pct">75%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" style="width:75%"></div>
               </div>
-              <p>ChatConnect (In Development)
-Real-time chat application being built with:
- Node.js, WebSocket, JavaScript, and planned integration with React
- Designed for future integration into Language Mentor for learner-to-learner messaging
- Focused on secure messaging, user presence, and notification support
-</p>
-              <div class="links">
-              
+            </div>
+            <div class="skill-item">
+              <div class="skill-header"><span>SQL &amp; MongoDB</span><span class="skill-pct">80%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" style="width:80%"></div>
               </div>
-            </article>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header"><span>AWS / Azure</span><span class="skill-pct">70%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" style="width:70%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header"><span>Network &amp; Security</span><span class="skill-pct">78%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" style="width:78%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-            
+  <!-- ===== SKILLS ===== -->
+  <section id="skills">
+    <div class="container">
+      <p class="section-label">Toolkit</p>
+      <h2 class="section-title reveal">Technologies &amp; Tools</h2>
+      <p class="section-sub reveal reveal-delay-1">The technologies I use to design, build, deploy, and secure modern
+        software systems.</p>
+      <div class="skills-cloud">
+        <div class="skill-tag reveal"><span class="tag-icon">⚡</span> JavaScript</div>
+        <div class="skill-tag reveal reveal-delay-1"><span class="tag-icon">🟢</span> Node.js</div>
+        <div class="skill-tag reveal reveal-delay-2"><span class="tag-icon">⚛️</span> React.js</div>
+        <div class="skill-tag reveal"><span class="tag-icon">🐍</span> Python</div>
+        <div class="skill-tag reveal reveal-delay-1"><span class="tag-icon">☕</span> Java</div>
+        <div class="skill-tag reveal reveal-delay-2"><span class="tag-icon">🗄️</span> SQL</div>
+        <div class="skill-tag reveal"><span class="tag-icon">🍃</span> MongoDB</div>
+        <div class="skill-tag reveal reveal-delay-1"><span class="tag-icon">🔌</span> WebSockets</div>
+        <div class="skill-tag reveal reveal-delay-2"><span class="tag-icon">☁️</span> AWS (EC2, S3, RDS, CloudFront)
+        </div>
+        <div class="skill-tag reveal"><span class="tag-icon">🔷</span> Microsoft Azure</div>
+        <div class="skill-tag reveal reveal-delay-1"><span class="tag-icon">🐳</span> Docker</div>
+        <div class="skill-tag reveal reveal-delay-2"><span class="tag-icon">🔁</span> Git / GitHub</div>
+        <div class="skill-tag reveal"><span class="tag-icon">🛡️</span> Network Security</div>
+        <div class="skill-tag reveal reveal-delay-1"><span class="tag-icon">📡</span> Wireshark</div>
+        <div class="skill-tag reveal reveal-delay-2"><span class="tag-icon">🤖</span> RAG / AI APIs</div>
+        <div class="skill-tag reveal"><span class="tag-icon">🔷</span> MS Dynamics CRM</div>
+        <div class="skill-tag reveal reveal-delay-1"><span class="tag-icon">⚙️</span> REST API Design</div>
+        <div class="skill-tag reveal reveal-delay-2"><span class="tag-icon">🔗</span> n8n Automation</div>
+      </div>
+    </div>
+  </section>
 
-         
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects">
+    <div class="container">
+      <p class="section-label">Work</p>
+      <h2 class="section-title reveal">Selected Projects</h2>
+      <p class="section-sub reveal reveal-delay-1">From AI-powered apps to real-time systems — a showcase of what I've
+        shipped.</p>
+      <div class="projects-grid">
 
+        <!-- ScentScript - FEATURED -->
+        <article class="project-card featured reveal">
+          <div class="project-top">
+            <div style="display:flex;gap:14px;align-items:flex-start;">
+              <div class="project-icon">🌸</div>
+              <div>
+                <div class="project-name">ScentScript - AI Fragrance Matchmaker</div>
+                <span class="project-badge concept">Competition Entry</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <!-- no public link yet -->
+            </div>
+          </div>
+          <p class="project-desc">A privacy-first AI recommendation engine tackling the "blind buy" problem in luxury
+            fragrances — built for <strong>L'Oréal Brandstorm 2026 (Tech Track)</strong>. Users enter scent preferences
+            and chemical sensitivities in a React frontend. The Node.js backend applies a <strong>RAG
+              architecture</strong> using an AI API to cross-reference profiles against private fragrance databases —
+            filtering unsafe formulas without exposing trade secrets. Output: bespoke recommendations like "It's Your
+            Type!" — a zero-manufacturing software solution boosting online consumer confidence.</p>
+          <div class="project-stack">
+            <span class="stack-tag">React.js</span>
+            <span class="stack-tag">Node.js</span>
+            <span class="stack-tag">RAG Architecture</span>
+            <span class="stack-tag">AI API</span>
+            <span class="stack-tag">REST API</span>
+          </div>
+        </article>
+
+        <!-- Embedded Finance RAG Bot -->
+        <article class="project-card reveal">
+          <div class="project-top">
+            <div class="project-icon">🤖</div>
+            <div class="project-links">
+              <a class="icon-btn" href="https://ai-agent-zeta-six.vercel.app/" target="_blank" rel="noopener"
+                title="Live Site">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-name">Embedded Finance Research Assistant</div>
+          <span class="project-badge live">Live</span>
+          <p class="project-desc">An AI research assistant trained on industry reports from Bain &amp; Company,
+            Deloitte, Visa, Munich Re, and PayPal Ventures. Built with a <strong>RAG architecture</strong>: documents
+            are chunked, embedded via Google Gemini, and stored in a Pinecone vector DB. Queries return accurate,
+            source-grounded answers.</p>
+          <div class="project-stack">
+            <span class="stack-tag">Gemini AI</span>
+            <span class="stack-tag">Pinecone</span>
+            <span class="stack-tag">n8n</span>
+            <span class="stack-tag">Vercel</span>
+          </div>
+          <a class="visit-btn" href="https://ai-agent-zeta-six.vercel.app/" target="_blank" rel="noopener">
+            Visit Live Site
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="5 12 12 12 19 12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </a>
+        </article>
+
+        <!-- Language Learning -->
+        <article class="project-card reveal reveal-delay-1">
+          <div class="project-top">
+            <div class="project-icon">📚</div>
+            <div class="project-links">
+              <a class="icon-btn" href="https://languagelearningcustfro.onrender.com/" target="_blank" rel="noopener"
+                title="Live Site">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-name">Language Learning Platform</div>
+          <span class="project-badge live">Live</span>
+          <p class="project-desc">An interactive online platform helping learners progress from beginner to advanced
+            language skills. Features structured lessons, real-time progress tracking, and interactive exercises. Fully
+            deployed and accessible via live demo.</p>
+          <div class="project-stack">
+            <span class="stack-tag">JavaScript</span>
+            <span class="stack-tag">Node.js</span>
+            <span class="stack-tag">Render</span>
+          </div>
+          <a class="visit-btn" href="https://languagelearningcustfro.onrender.com/" target="_blank" rel="noopener">
+            Visit Live Site
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="5 12 12 12 19 12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </a>
+        </article>
+
+        <!-- ChatConnect -->
+        <article class="project-card reveal reveal-delay-2">
+          <div class="project-top">
+            <div class="project-icon">💬</div>
+            <div class="project-links">
+              <a class="icon-btn" href="https://github.com/axelniyo" target="_blank" rel="noopener" title="GitHub">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-name">ChatConnect</div>
+          <span class="project-badge wip">In Development</span>
+          <p class="project-desc">Real-time chat application built with Node.js, WebSocket, and JavaScript — with
+            planned React integration. Designed for future integration into the Language Learning platform for
+            learner-to-learner messaging. Focused on secure messaging, user presence tracking, and notifications.</p>
+          <div class="project-stack">
+            <span class="stack-tag">Node.js</span>
+            <span class="stack-tag">WebSockets</span>
+            <span class="stack-tag">React (planned)</span>
+            <span class="stack-tag">JWT Auth</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="experience">
+    <div class="container">
+      <p class="section-label">Career</p>
+      <h2 class="section-title reveal">Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="tl-date">Jan 2026 — Present</div>
+          <div class="tl-line">
+            <div class="tl-dot"></div>
+            <div class="tl-track"></div>
+          </div>
+          <div class="tl-content">
+            <div class="tl-role">Software Developer (Part-Time)</div>
+            <div class="tl-company">VT Labs</div>
+            <ul class="tl-bullets">
+              <li>Develop scalable full-stack web applications using JavaScript, React, and Node.js</li>
+              <li>Design and maintain secure RESTful APIs for frontend-backend integration</li>
+              <li>Deploy and containerize applications using Docker for consistent cloud environments</li>
+              <li>Collaborate using Git/GitHub workflows including version control and feature integration</li>
+              <li>Debug, refactor, and optimize applications to ensure performance and maintainability</li>
+            </ul>
           </div>
         </div>
 
-      <div class="card section">
-  <h3>Experience</h3>
-
-  <p style="color:var(--muted)">
-  <strong>Software Developer (Part-Time) – VT Labs (Present)</strong><br>
-  • Develop scalable full-stack web applications using JavaScript, React, and Node.js<br>
-  • Design and maintain secure RESTful APIs for frontend-backend integration<br>
-  • Deploy and containerize applications using Docker for consistent cloud environments<br>
-  • Collaborate using Git/GitHub workflows including version control and feature integration<br>
-  • Debug, refactor, and optimize applications to ensure performance and maintainability
-  </p>
-
-  <br>
-
-  <p style="color:var(--muted)">
-  <strong>IT Analyst – Bright Light Academy (2024 – 4th Jan 2026)</strong><br>
-  • Delivered technical support across software, hardware, and network platforms<br>
-  • Resolved system and connectivity issues with detailed documentation<br>
-  • Maintained performance monitoring and backup procedures<br>
-  • Assisted users with OS-level troubleshooting and access management
-  </p>
-
-  <h3>Education</h3>
-  <p style="color:var(--muted)">
-  University of the People — B.Sc. Computer Science (Present)<br>
-  University of Lay A of KIGALI (UNILAK) — B.Sc. Information Technology (IT) - Present
-  </p>
-
-  <h3>Certifications</h3>
-  <p style="color:var(--muted)">
-  • Cisco Certified Support Technician (CCST) – Troubleshooting & Securing Networks<br>
-  • Cybersecurity Foundations – LinkedIn Learning<br>
-  • Microsoft Azure Fundamentals – LinkedIn Learning
-  </p>
-</div>
-
-      </section>
-
-      <aside class="right">
-        <div class="card">
-          <h3>Contact</h3>
-          <div id="contact" class="contact-list">
-            <div class="contact-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 7.5C2 6.11929 3.11929 5 4.5 5H19.5C20.8807 5 22 6.11929 22 7.5V16.5C22 17.8807 20.8807 19 19.5 19H4.5C3.11929 19 2 17.8807 2 16.5V7.5Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg><div><div style="font-weight:700">Email</div><div style="color:var(--muted);font-size:13px">axelniyo@outlook.com</div></div></div>
-            <div class="contact-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 21H3V8a2 2 0 0 1 2-2h2l1-2h6l1 2h2a2 2 0 0 1 2 2v13z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg><div><div style="font-weight:700">Location</div><div style="color:var(--muted);font-size:13px">Kigali, Rwanda</div></div></div>
-            <div class="contact-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 2L11 13" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 2l-5 20-9-9-6 6" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg><div><div style="font-weight:700">GitHub</div><div style="color:var(--muted);font-size:13px">github.com/axelniyo</div></div></div>
-            <div class="contact-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 8a6 6 0 1 1-8 0" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 14v7" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg><div><div style="font-weight:700">LinkedIn</div><div style="color:var(--muted);font-size:13px">https://www.linkedin.com/in/axel-niyonsaba/</div></div></div>
+        <div class="timeline-item reveal reveal-delay-1">
+          <div class="tl-date">2024 — 4th Jan 2026</div>
+          <div class="tl-line">
+            <div class="tl-dot"></div>
+            <div class="tl-track"></div>
+          </div>
+          <div class="tl-content">
+            <div class="tl-role">IT Analyst</div>
+            <div class="tl-company">Bright Light Academy</div>
+            <ul class="tl-bullets">
+              <li>Delivered technical support across software, hardware, and network platforms</li>
+              <li>Resolved system and connectivity issues with detailed documentation</li>
+              <li>Maintained performance monitoring and backup procedures</li>
+              <li>Assisted users with OS-level troubleshooting and access management</li>
+            </ul>
           </div>
         </div>
 
-        <div class="card" style="margin-top:14px">
-          <h3>Quick CV</h3>
-          <p style="color:var(--muted);margin-bottom:12px">Download a one-page CV that summarizes my skills, education, and projects.</p>
-          <a class="btn primary" id="resume" href="#">Download CV</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION & CERTS ===== -->
+  <section id="education">
+    <div class="container">
+      <p class="section-label">Credentials</p>
+      <h2 class="section-title reveal">Education &amp; Certifications</h2>
+      <div class="edu-grid">
+        <div class="edu-card reveal">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-title">B.Sc. Computer Science</div>
+          <div class="edu-sub">University of the People</div>
+          <span class="edu-period">In Progress</span>
+        </div>
+        <div class="edu-card reveal reveal-delay-1">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-title">B.Sc. Information Technology</div>
+          <div class="edu-sub">UNILAK — Kigali, Rwanda</div>
+          <span class="edu-period">In Progress</span>
+        </div>
+      </div>
+
+      <div class="cert-list">
+        <div class="cert-card reveal">
+          <div class="cert-icon">🔒</div>
+          <div>
+            <div class="cert-name">Cisco CCST</div>
+            <div class="cert-issuer">Troubleshooting &amp; Securing Networks</div>
+          </div>
+        </div>
+        <div class="cert-card reveal reveal-delay-1">
+          <div class="cert-icon">🛡️</div>
+          <div>
+            <div class="cert-name">Cybersecurity Foundations</div>
+            <div class="cert-issuer">LinkedIn Learning</div>
+          </div>
+        </div>
+        <div class="cert-card reveal reveal-delay-2">
+          <div class="cert-icon">☁️</div>
+          <div>
+            <div class="cert-name">Microsoft Azure Fundamentals</div>
+            <div class="cert-issuer">LinkedIn Learning</div>
+          </div>
+        </div>
+        <div class="cert-card reveal reveal-delay-3">
+          <div class="cert-icon">⚡</div>
+          <div>
+            <div class="cert-name">AWS Cloud Practitioner Skills</div>
+            <div class="cert-issuer">Hands-on with EC2, S3, RDS, CloudFront</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="container">
+      <p class="section-label">Let's Talk</p>
+      <h2 class="section-title reveal">Get in Touch</h2>
+      <div class="contact-wrap">
+        <div class="contact-text reveal">
+          <p>I'm currently open to <strong>full-time, part-time, and freelance</strong> opportunities in full-stack
+            development, backend engineering, and cloud/DevOps roles. Remote or hybrid — let's connect!</p>
+          <div class="contact-methods">
+            <a class="contact-link" href="mailto:axelniyo@outlook.com">
+              <div class="contact-link-icon">✉️</div>
+              <div>
+                <div class="contact-link-label">Email</div>
+                <div class="contact-link-val">axelniyo@outlook.com</div>
+              </div>
+            </a>
+            <a class="contact-link" href="https://github.com/axelniyo" target="_blank" rel="noopener">
+              <div class="contact-link-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                </svg>
+              </div>
+              <div>
+                <div class="contact-link-label">GitHub</div>
+                <div class="contact-link-val">github.com/axelniyo</div>
+              </div>
+            </a>
+            <a class="contact-link" href="https://www.linkedin.com/in/axel-niyonsaba/" target="_blank" rel="noopener">
+              <div class="contact-link-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                  <rect x="2" y="9" width="4" height="12" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+              </div>
+              <div>
+                <div class="contact-link-label">LinkedIn</div>
+                <div class="contact-link-val">axel-niyonsaba</div>
+              </div>
+            </a>
+            <div class="contact-link" style="cursor:default;">
+              <div class="contact-link-icon">📍</div>
+              <div>
+                <div class="contact-link-label">Location</div>
+                <div class="contact-link-val">Kigali, Rwanda · Open to Remote</div>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="card" style="margin-top:14px">
-          <h3>Availability</h3>
-          <p style="color:var(--muted)">Open to remote & local roles in networking, site reliability, and fullstack, frontend and backend support.</p>
+        <div class="contact-form-wrap reveal reveal-delay-1">
+          <h3>Send a Message</h3>
+          <form id="contact-form" action="mailto:axelniyo@outlook.com" method="post" enctype="text/plain">
+            <div class="form-group">
+              <label for="cf-name">Name</label>
+              <input type="text" id="cf-name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="cf-email">Email</label>
+              <input type="email" id="cf-email" name="email" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="cf-subject">Subject</label>
+              <input type="text" id="cf-subject" name="subject" placeholder=" Project" />
+            </div>
+            <div class="form-group">
+              <label for="cf-msg">Message</label>
+              <textarea id="cf-msg" name="message" placeholder="Tell me about the role, project, or just say hi..."
+                required></textarea>
+            </div>
+            <button type="submit" class="form-submit">Send Message</button>
+          </form>
         </div>
-      </aside>
-    </main>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-      Built by Niyonsaba Axel — <span style="color:var(--muted)">Kigali, Rwanda</span>
-    </footer>
-  </div>
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div style="margin-bottom:8px">
+      <a href="mailto:axelniyo@outlook.com">axelniyo@outlook.com</a> &nbsp;·&nbsp;
+      <a href="https://github.com/axelniyo" target="_blank" rel="noopener">GitHub</a> &nbsp;·&nbsp;
+      <a href="https://www.linkedin.com/in/axel-niyonsaba/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <div>Designed &amp; built by <strong>Axel Niyonsaba</strong> — Kigali, Rwanda &copy; 2025</div>
+  </footer>
 
-  <script>
-    // Small JS helpers (edit links, prepare download)
-    document.addEventListener('click', function(e){
-      if(e.target.matches('a[href="#"]')){
-        e.preventDefault();
-        alert('This link is a placeholder.');
-      }
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
+
 </html>
