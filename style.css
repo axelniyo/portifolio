@@ -184,7 +184,7 @@ section {
 }
 
 .section-label::before {
-    content: '';
+
     display: block;
     width: 24px;
     height: 2px;
@@ -629,7 +629,6 @@ section {
 }
 
 .project-card::before {
-    content: '';
     position: absolute;
     top: 0;
     left: 0;
